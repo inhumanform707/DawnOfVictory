@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36109.1 d17.14
+VisualStudioVersion = 17.14.36109.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DawnOfVictory", "DawnOfVictory.csproj", "{7D44AE79-2AEA-4805-B172-FE546563DC75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryDOV", "..\ClassLibraryDOV\ClassLibraryDOV.csproj", "{DDAC877C-3E3F-4E99-8914-CDB1C00840D9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryDOV", "ClassLibraryDOV\ClassLibraryDOV.csproj", "{DDAC877C-3E3F-4E99-8914-CDB1C00840D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

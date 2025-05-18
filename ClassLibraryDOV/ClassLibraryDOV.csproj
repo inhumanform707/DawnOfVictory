@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7D44AE79-2AEA-4805-B172-FE546563DC75}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>DawnOfVictory</RootNamespace>
-    <AssemblyName>DawnOfVictory</AssemblyName>
+    <ProjectGuid>{DDAC877C-3E3F-4E99-8914-CDB1C00840D9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClassLibraryDOV</RootNamespace>
+    <AssemblyName>ClassLibraryDOV</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,17 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Class\Boss.cs" />
+    <Compile Include="Class\Character.cs" />
+    <Compile Include="Class\Fight.cs" />
+    <Compile Include="Class\Sorcerer.cs" />
+    <Compile Include="Class\Thief.cs" />
+    <Compile Include="Class\Warrior.cs" />
+    <Compile Include="Enumeration\Kind.cs" />
+    <Compile Include="Interface\IAble.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Record\FightLog.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="ClassLibraryDOV\ClassLibraryDOV.csproj">
-      <Project>{ddac877c-3e3f-4e99-8914-cdb1c00840d9}</Project>
-      <Name>ClassLibraryDOV</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
