@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibraryDOV.Class
 {
-    internal class Sorcerer : Character, IAble
+    public class Sorcerer : Character, IAble
     {
         #region Properties
         public int Mana { get; set; }

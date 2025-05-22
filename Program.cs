@@ -11,8 +11,13 @@ namespace DawnOfVictory
     {
         static void Main(string[] args)
         {
-            Warrior character = new Warrior("Pero");
-            character.ShowInfo();
+            Warrior warrior = new Warrior("Pero");
+            Sorcerer sorcerer = new Sorcerer("Janko");
+            Fight.SimulateFight(warrior, sorcerer);
+            warrior.ShowInfo();
+            sorcerer.ShowInfo();
+
+
         }
     }
 }
