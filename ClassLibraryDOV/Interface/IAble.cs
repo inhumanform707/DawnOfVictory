@@ -8,7 +8,7 @@ namespace ClassLibraryDOV.Interface
 {
     internal interface IAble
     {
-        void UseSpecialAbility();
+        string UseSpecialAbility();
         void Attack(Character target);
     }
 }

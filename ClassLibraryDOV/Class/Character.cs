@@ -22,7 +22,7 @@ namespace ClassLibraryDOV
         #endregion
 
         #region Methods
-        public void ShowInfo()
+        public virtual void ShowInfo()
         {
             Console.WriteLine($"Name: {Name}, Health: {Health}, Strength: {Strength}, Intelligence: {Intelligence}");
         }

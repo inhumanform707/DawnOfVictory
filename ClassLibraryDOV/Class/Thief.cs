@@ -38,9 +38,10 @@ namespace ClassLibraryDOV.Class
                 target.Health -= Strength;
             }
         }
-        public void UseSpecialAbility()
+        public string UseSpecialAbility()
         {
             Backstab = true;
+            return "Backstab activated!";
         }
         #endregion
     }

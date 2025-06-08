@@ -34,12 +34,20 @@ namespace ClassLibraryDOV.Class
             else
             {
                 target.Health -= Strength;
-            }   
+            }
+
+            Berserk = false;
         }
 
-        public void UseSpecialAbility()
+        public string UseSpecialAbility()
         {
             Berserk = true;
+            return "Berserk activated!";
+        }
+
+        public override void ShowInfo()
+        {
+            Console.WriteLine($"Name: {Name}, Health: {Health}, Strength: {Strength}, Intelligence: {Intelligence}, Berserk: {Berserk}");
         }
         #endregion
     }

@@ -39,7 +39,9 @@ namespace ClassLibraryDOV.Class
                 {
                     target.Health -= Intelligence * 2;
                     Mana -= 10;
-                }      
+                }
+
+                GreatVision = false;
             }
             else
             {
@@ -47,9 +49,15 @@ namespace ClassLibraryDOV.Class
             }
         }
 
-        public void UseSpecialAbility()
+        public string UseSpecialAbility()
         {
             GreatVision = true;
+            return "Great Vision activated!";
+        }
+
+        public override void ShowInfo()
+        {
+            Console.WriteLine($"Name: {Name}, Health: {Health}, Strength: {Strength}, Intelligence: {Intelligence}, Great Vision: {GreatVision}");
         }
         #endregion
     }
